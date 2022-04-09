@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="crew.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header id="header">
+    <div id="nav" class="nav-bar">
+      <img src="./assets/shared/logo.svg" alt="company logo" id="logo">
+      <span class="nav-line"></span>
+      <nav class="parent-nav-bar">
+        <img src="./assets/shared/icon-hamburger.svg" alt="" id="open-menu" class="mobile open" aria-controls="parent-nav" aria-expanded="false">
+        <ul id="parent-nav" class="ul-nav">
+          <li><img src="./assets/shared/icon-close.svg" alt="" id="close-menu" class="mobile close"></li>
+          <li class="child-nav">
+            <a href="./index.html" class="a-nav"><span class="num-nav">00</span>Home</a>
+          </li>
+          <li class="child-nav">           
+            <a href="./destination.html" class="a-nav"><span class="num-nav ">01</span>Destination</a>
+          </li>
+          <li class="child-nav">          
+            <a href="./crew.html" class="a-nav"><span class="num-nav">02</span>Crew</a>
+          </li>
+          <li class="child-nav">            
+            <a href="./technology.html" class="a-nav"><span class="num-nav">03</span>Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 class="page-header"><span class="num-header">02</span>meet your crew</h1>
+    <div class="parent-div dest-body">
+      <div class="img-crew mobile-image">
+        <picture id="commander-mobile-img" class="crew-image" role="imgpanel">
+          <source srcset="./assets/crew/image-douglas-hurley.png" type="image/png">
+          <img src="./assets/crew/image-douglas-hurley.webp" alt="image-crew" class="image-crew">
+        </picture>
+        <picture id="engineer-mobile-img" class="crew-image" role="imgpanel" hidden>
+          <source srcset="./assets/crew/image-anousheh-ansari.png" type="image/png">
+          <img src="./assets/crew/image-anousheh-ansari.webp" alt="image-crew" class="image-crew">
+        </picture>
+        <picture id="pilot-mobile-img" class="crew-image" role="imgpanel" hidden>
+          <source srcset="./assets/crew/image-victor-glover.png" type="image/png">
+          <img src="./assets/crew/image-victor-glover.webp" alt="image-crew" class="image-crew">
+        </picture>
+        <picture id="mission-mobile-img" class="crew-image" role="imgpanel" hidden>
+          <source srcset="./assets/crew/image-mark-shuttleworth.png" type="image/png">
+          <img src="./assets/crew/image-mark-shuttleworth.webp" alt="image-crew" class="image-crew">
+        </picture>
+      </div> 
+
+      <div class="line mobile"><p class=" under-line"></p></div>
+
+      <div class="mobile-crew-nav" role="tablist" aria-label="crew list">
+        <button class="crew-subpage" aria-selected="true" role="tab" page-tab="commander-tab" page-image="commander-mobile-img"></button>
+        <button class="crew-subpage" aria-selected="false" role="tab" page-tab="engineer-tab" page-image="engineer-mobile-img"></button>
+        <button class="crew-subpage" aria-selected="false" role="tab" page-tab="pilot-tab" page-image="pilot-mobile-img"></button>
+        <button class="crew-subpage" aria-selected="false" role="tab" page-tab="mission-tab" page-image="mission-mobile-img"></button>
+      </div>
+      <div class="dest-content">
+        <!--Commander page-->
+        <article id="commander-tab" tabindex="0" role="tabpanel">
+          <p class="small">Commander</p>
+          <h2 class="dest-subpage-02" >Douglas Hurley</h2>
+          <p class="small-2">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+            and former NASA astronaut. He launched into space for the third time as 
+            commander of Crew Dragon Demo-2.
+          </p>
+        </article>
+
+        <!--Engineer page-->
+        <article id="engineer-tab" tabindex="-1" role="tabpanel" hidden>
+          <p class="small">Flight Engineer</p>
+          <h2 class="dest-subpage-02" >Anousheh Ansari</h2>
+          <p class="small-2">
+            Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+            Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+            fly to the ISS, and the first Iranian in space.
+          </p>
+        </article>
+
+        <!--Pilot page-->
+        <article id="pilot-tab" tabindex="-1" role="tabpanel" hidden>
+          <p class="small">Pilot</p>
+          <h2 class="dest-subpage-02" >Victor Glover</h2>
+          <p class="small-2"> 
+            Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+            International Space Station. Glover is a commander in the U.S. Navy where 
+            he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+            station systems flight engineer.
+          </p>
+        </article>
+
+        <!--Mission page-->
+        <article id="mission-tab" tabindex="-1" role="tabpanel" hidden> 
+          <p class="small">Mission Specialist</p>
+          <h2 class="dest-subpage-02" >Mark Shuttleworth</h2>
+          <p class="small-2">
+            Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+            the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+            African to travel to space as a space tourist.
+          </p>
+        </article>
+      </div>    
+      <div class="desktop-crew-nav" role="tablist" aria-label="crew list">
+        <button class="crew-subpage nav-tab" aria-selected="true" role="tab" page-tab="commander-tab" page-image="commander-img"></button>
+        <button class="crew-subpage nav-tab" aria-selected="false" role="tab" page-tab="engineer-tab" page-image="engineer-img"></button>
+        <button class="crew-subpage nav-tab" aria-selected="false" role="tab" page-tab="pilot-tab" page-image="pilot-img"></button>
+        <button class="crew-subpage nav-tab" aria-selected="false" role="tab" page-tab="mission-tab" page-image="mission-img"></button>
+      </div>  
+      <div class="img-crew desktop-image">
+        <picture id="commander-img" class="crew-image" role="imgpanel">
+          <source srcset="./assets/crew/image-douglas-hurley.png" type="image/png">
+          <img src="./assets/crew/image-douglas-hurley.webp" alt="image-crew" class="image-crew">
+        </picture>
+        <picture id="engineer-img" class="crew-image" role="imgpanel" hidden>
+          <source srcset="./assets/crew/image-anousheh-ansari.png" type="image/png">
+          <img src="./assets/crew/image-anousheh-ansari.webp" alt="image-crew" class="image-crew">
+        </picture>
+        <picture id="pilot-img" class="crew-image" role="imgpanel" hidden>
+          <source srcset="./assets/crew/image-victor-glover.png" type="image/png">
+          <img src="./assets/crew/image-victor-glover.webp" alt="image-crew" class="image-crew">
+        </picture>
+        <picture id="mission-img" class="crew-image" role="imgpanel" hidden>
+          <source srcset="./assets/crew/image-mark-shuttleworth.png" type="image/png">
+          <img src="./assets/crew/image-mark-shuttleworth.webp" alt="image-crew" class="image-crew">
+        </picture>
+      </div> 
+    </div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>

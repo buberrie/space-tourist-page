@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+
+* { 
+    /*border: solid olivedrab 1px;*/
+    margin: 0;
+    
+}
+
+body {
+    background-image: url(./assets/technology/background-technology-desktop.jpg);
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    display: flex;
+    margin: 30px 0;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.nav-line {
+    border-bottom: solid rgba(208, 214, 249, 0.2) 0.05px;
+    width: 40em;
+    position: relative;
+    height: 0.01px;
+    margin-top: 40px;
+    margin-left: 5em;
+}
+
+.ul-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: relative;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 4%);
+    backdrop-filter: blur(20px);
+    height: 80px;
+    width: 40em;
+    padding: 0 30px 0 10px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.num-nav {
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 0.4em;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.child-nav:hover {
+    border-bottom: solid rgba(255, 255, 255, 0.5) 3px;
+}
+
+.child-nav.active {
+    border-bottom: solid #ffffff 3px;
+}
+
+.a-nav {
+    position: relative;
+    top: 30px;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 0.8em;
+    letter-spacing: 2px;
+}
+
+.page-header {
+    position: relative;
+    color: #ffffff;
+    font-size: 2em;
+    font-family: 'barlow condensed', sans-serif;
+    letter-spacing: 4px;
+    top: 50px;
+    left: 150px;
+    width: 20em;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.num-header {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    padding-right: 25px;
+}
+
+.parent-div {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dest-body {
+    position: relative;
+    top: 0px;
+    bottom: 0;
+}
+
+.technology-ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    top: 150px;
+    left: 130px;
+    height: 19em;
+}
+
+.button {
+    position: relative;
+    background-color: transparent;
+    border: solid rgba(255, 255, 255, 0.4) 1px;
+    color: #ffffff;
+    font-family: 'Bellefair', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    grid-column: 1/2;  
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.button:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dest-img {
+    position: relative;
+    width: 80%;
+    grid-column: 5/6;
+
+}
+
+.image-technology {
+    position: relative;
+    top: 50px;
+    width: 26em;
+    height: 32em;
+}
+
+.dest-content {
+    position: relative;
+    width: 80%;
+    top: 150px;
+    height: 30em;
+    left: 70px;
+    grid-column: 2/5;
+}
+
+.dest-subpage-02{
+    position: relative;
+    color: #ffffff;
+    top: 10px;
+    font-size: 3.3em;
+    text-transform: uppercase;
+    font-family: 'Bellefair', sans-serif;
+    font-weight: lighter;
+}
+
+.small {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'barlow condensed', sans-serif;
+    color: rgba(208, 214, 249, 0.8);
+    letter-spacing: 3px;
+}
+
+.small-2 {
+    position: relative;
+    top: 25px;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: rgb(208, 214, 249);
+    width: 83%;
+}
+
+.tablet {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    body {
+        background-image: url(./assets/technology/background-technology-tablet.jpg);
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    #logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    
+    .nav-line {
+        display: none;
+    }
+    
+    .ul-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:  space-evenly;
+        position: relative;
+        list-style: none;
+        background-color: rgba(255, 255, 255, 4%);
+        backdrop-filter: blur(10px);
+        height: 90px;
+        width: 26em;
+    }
+    
+    .mobile-nav {
+        display: none;
+    }
+
+    .tablet{
+        display: block;
+    }
+    
+    .num-nav {
+        display: none;
+    }
+    
+    .a-nav {
+        position: relative;
+        top: 35px;
+        font-family: 'barlow condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 0.8em;
+        letter-spacing: 2px;
+    }
+    
+    .page-header {
+        position: relative;
+        color: #ffffff;
+        font-size: 1.2em;
+        font-family: 'barlow condensed', sans-serif;
+        letter-spacing: 4px;
+        top: 50px;
+        left: 50px;
+        width: 20em;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    
+    .num-header {
+        position: relative;
+        color: rgba(255, 255, 255, 0.5);
+        padding-right: 25px;
+    }
+
+    .parent-div {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    
+    .dest-body {
+        position: relative;
+        top: 0px;
+        bottom: 0;
+    }
+    
+    .technology-ul {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        top: 180px;
+        left: 0;
+        height: 5em;
+    }
+    
+    .button {
+        position: relative;
+        background-color: transparent;
+        border: solid rgba(255, 255, 255, 0.4) 1px;
+        font-family: 'Bellefair', sans-serif;
+        text-align: center;
+        color: #ffffff;
+        font-size: 25px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%; 
+        margin-left: 8px;
+        margin-right: 8px; 
+    }
+    
+    .dest-img {
+        position: relative;    
+        width: 100%;
+    }
+    
+    .image-technology {
+        position: relative;
+        top: 110px;
+        width: 100%;
+        height: inherit;
+    }
+    
+    .dest-content {
+        position: relative;
+        width: 100%;
+        top: 220px;
+        height: 30em;
+        left: 0;
+    }
+    
+    .dest-subpage-02{
+        position: relative;
+        color: #ffffff;
+        top: 30px;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-family: 'Bellefair', sans-serif;
+        font-weight: lighter;
+    }
+    
+    .small {
+        font-size: 1.1em;
+        text-transform: uppercase;
+        font-family: 'barlow condensed', sans-serif;
+        color: rgba(208, 214, 249, 0.8);
+        letter-spacing: 3px;
+    }
+    
+    .small-2 {
+        position: relative;
+        top: 60px;
+        font-family: 'barlow condensed', sans-serif;
+        font-size: 18px;
+        line-height: 35px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        color: rgb(208, 214, 249);
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+    @media (max-width: 600px) {
+        body {
+            background-image: url(./assets/technology/background-technology-mobile.jpg);
+            position: absolute;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+        }
+        
+        #logo {
+            width: 50px;
+            height: 50px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        
+        .nav-line {
+            display: none;
+        }
+    
+        
+        .mobile-nav {
+            display: block;
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .num-nav {
+            display: inline;
+            letter-spacing: 3px;
+        }
+
+        .ul-nav {
+            display: none;
+            justify-content: start;
+            flex-direction: column;
+            position: fixed;
+            list-style: none;
+            background-color: rgba(255, 255, 255, 10%);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            height: 660px;
+            margin-left: 15%;
+            width: 60%;
+            left: 20%;
+        }
+
+        .child-nav:hover {
+            border-bottom: 0;
+        }
+        
+        .child-nav.active {
+            border-bottom: 0;
+        }
+
+        .a-nav {
+            position: relative;
+            top: 75px;
+            line-height: 50px;
+            font-family: 'barlow condensed', sans-serif;
+            font-size: 16px;
+            font-weight: 0.8em;
+            letter-spacing: 3px;
+            left: 10%;
+            width: 90%;
+        }
+
+        .ul-nav.active {
+            display: flex;
+        }
+
+        .close {
+            position: absolute;
+            top:  28px;
+            left: 75%;
+        }
+
+        .open {
+            display: block;
+            position: absolute;
+            top:  30px;
+            left: 85%;
+        }
+
+        .open.active {
+            display: none;
+        }
+           
+        .page-header {
+            position: relative;
+            color: #ffffff;
+            font-size: 1.1em;
+            font-family: 'barlow condensed', sans-serif;
+            letter-spacing: 4px;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: lighter;
+            text-align: center;
+        }
+    
+        .technology-ul {
+            top: 110px;
+        }
+            
+        .button {
+            font-size: 18px;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;  
+        }
+        
+        .image-technology {
+            position: relative;
+            top: 70px;
+            width: 100%;
+            height: inherit;
+        }
+        
+        .dest-content {
+            position: relative;
+            width: 100%;
+            top: 100px;
+            height: 30em;
+            left: 0;
+        }
+        
+        .dest-subpage-02{
+            position: relative;
+            color: #ffffff;
+            top: 15px;
+            font-size: 1.7em;
+            text-transform: uppercase;
+            font-family: 'Bellefair', sans-serif;
+            font-weight: lighter;
+        }
+        
+        .small {
+            font-size: .9em;
+            text-transform: uppercase;
+            font-family: 'barlow condensed', sans-serif;
+            color: rgba(208, 214, 249, 0.8);
+            letter-spacing: 3px;
+        }
+        
+        .small-2 {
+            position: relative;
+            top: 45px;
+            font-family: 'barlow condensed', sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            color: rgb(208, 214, 249);
+            width: 80%;
+            margin: 0 auto;
+        }
+    }

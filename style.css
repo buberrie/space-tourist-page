@@ -1,0 +1,500 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+
+* { 
+    /*border: solid red 1px;*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;   
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    display: flex;
+    margin: 30px 0;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.nav-line {
+    border-bottom: solid rgba(208, 214, 249, 0.2) 0.05px;
+    width: 40em;
+    position: relative;
+    height: 0.01px;
+    margin-top: 40px;
+    margin-left: 5em;
+}
+
+.ul-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: relative;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 4%);
+    backdrop-filter: blur(10px);
+    height: 80px;
+    width: 40em;
+    padding: 0 30px 0 10px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.num-nav {
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 0.4em;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+li:hover {
+    border-bottom: solid rgba(255, 255, 255, 0.5) 3px;
+}
+
+li.active {
+    border-bottom: solid #ffffff 3px;
+}
+
+.a-nav {
+    position: relative;
+    top: 30px;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 0.8em;
+    letter-spacing: 2px;
+}
+
+.parent-div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.child-1 {
+    color: #ffffff;
+    width: 35%;
+    margin: 14em 10em 10em 10em;
+    position: relative;
+}
+
+
+.big {
+    position: relative;
+    top: 30px;
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family: 'Bellefair', sans-serif;
+}
+
+.small {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 28px;
+    color: rgb(208, 214, 249);
+    letter-spacing: 5px;
+}
+
+.small-2 {
+    position: relative;
+    top: 40px;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: rgb(208, 214, 249);
+}
+
+.child-2 {
+    position: relative;
+    width: 35%;
+    
+}
+
+.explore-child {
+    position: relative;
+    color: black;
+    left: 28%;
+    top: 46%;
+    font-family: 'Bellefair', sans-serif;
+    font-size: 28px;
+}
+
+.button {
+    position: relative;
+    background-color: #ffffff;
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    top: 46%;
+    left: 28%;
+   
+}
+
+.button::before {
+    content: '';
+    background: rgba(255, 255, 255, 10%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transition: opacity 500ms linear, transform 750ms ease-in-out;
+    opacity: 0;
+}
+
+.button:hover::before,
+.button:focus::before {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+@media (max-width:1000px) {
+    body {
+        background-image: url(./assets/home/background-home-tablet.jpg);
+        position: absolute;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .nav-bar {
+        display: flex;
+        margin: 0;
+    }
+    
+    #logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    
+    .nav-line {
+        visibility: hidden;
+    }
+    
+    .ul-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        position: relative;
+        list-style: none;
+        background-color: rgba(255, 255, 255, 4%);
+        backdrop-filter: blur(10px);
+        height: 90px;
+        width: 25em;
+        
+    }
+    
+    .mobile-nav {
+        display: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    
+    .num-nav {
+        display: none;
+    }
+    
+    li:hover {
+        padding: 0;
+        border-bottom: solid rgba(255, 255, 255, 0.6) 3px;
+    }
+    
+    li.active {
+        border-bottom: solid #ffffff 3px;
+        padding: 0;
+    }
+    
+    .a-nav {
+        position: relative;
+        top: 35px;
+        font-family: 'barlow condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 0.8em;
+        letter-spacing: 2px;
+    }
+    
+    .parent-div {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .child-1 {
+        color: #ffffff;
+        width: 100%;
+        margin: 0;
+        padding-top: 100px;
+        text-align: center;
+        position: relative;
+    }
+    
+    
+    .small {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        font-family: 'barlow condensed', sans-serif;
+        color: rgb(208, 214, 249);
+        letter-spacing: 4px;
+    }
+    
+    .small-2 {
+        position: relative;
+        top: 30px;
+        font-family: 'barlow condensed', sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        margin: 0 150px;
+        color: rgb(208, 214, 249);
+    }
+    
+    .child-2 {
+        position: relative;
+        width: 100%;
+        top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .explore-child {
+        position: relative;
+        color: black;
+        left: 22%;
+        top: 46%;
+        font-family: 'Bellefair', sans-serif;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    
+    .button {
+        position: relative;
+        background-color: #ffffff;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin: 0 auto;
+        left: 0;
+        
+       
+    }
+    
+@media (max-width: 550px) {
+        body {
+            background-image: url(./assets/home/background-home-mobile.jpg);
+            position: absolute;
+            margin: 0 auto;
+            width:  100%;  
+        }
+        
+        .nav-bar {
+            display: flex;
+            margin: 0;
+            width: 100%;
+        }
+        
+        #logo {
+            width: 40px;
+            height: 40px;
+            margin-left: 30px;
+            margin-top: 25px;
+        }
+        
+        .nav-line {
+            display: none;
+        }
+        
+        .ul-nav {
+            display: none;
+            justify-content: start;
+            flex-direction: column;
+            position: fixed;
+            list-style: none;
+            background-color: rgba(255, 255, 255, 10%);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            height: 660px;
+            margin-left: 15%;
+            width: 60%;
+            left: 20%;
+            transition: transform 500ms ease-in-out;
+        }
+
+        .a-nav {
+            position: relative;
+            top: 75px;
+            line-height: 60px;
+            font-family: 'barlow condensed', sans-serif;
+            font-size: 16px;
+            font-weight: 0.8em;
+            letter-spacing: 3px;
+            left: 10%;
+            width: 90%;
+        }
+
+        .ul-nav.active {
+            display: flex;
+        }
+        
+        .mobile-nav {
+            display: inline;
+        }
+
+        .close {
+            position: absolute;
+            top:  28px;
+            left: 75%;
+        }
+
+        .open {
+            display: block;
+            position: absolute;
+            top:  30px;
+            left: 85%;
+        }
+
+        .open.active {
+            display: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        
+        .num-nav {
+            display: inline;
+            letter-spacing: 3px;
+        }
+        
+        li:hover {
+            padding: 0;
+            border-bottom: 0px;
+        }
+        
+        li.active {
+            border-bottom: 0;
+            padding: 0;
+        }
+
+        .parent-div {
+            display: flex;
+            flex-wrap: nowrap;
+            position: absolute;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .child-1 {
+            color: #ffffff;
+            width: 98%;
+            margin: 0;
+            padding-top: 2em;
+            text-align: center;
+            position: relative;
+        }
+        
+        
+        .small {
+            font-size: 1.1em;
+            text-transform: uppercase;
+            font-family: 'barlow condensed', sans-serif;
+            color: rgb(208, 214, 249);
+            letter-spacing: 4px;
+        }
+
+          
+        .big {
+            position: relative;
+            top: 25px;
+            font-size: 6em;
+            text-transform: uppercase;
+            font-family: 'Bellefair', sans-serif;
+        }
+        
+        
+        .small-2 {
+            position: relative;
+            top: 55px;
+            font-family: 'barlow condensed', sans-serif;
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            margin: 0 30px;
+            color: rgb(208, 214, 249);
+        }
+        
+        .child-2 {
+            position: relative;
+            width: 98%;
+            top: 150px;
+            padding-bottom: 80px ;
+        }
+        
+        .explore-child {
+            position: relative;
+            color: black;
+            left: 20%;
+            top: 45%;
+            font-family: 'Bellefair', sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+        
+        .button {
+            position: relative;
+            background-color: #ffffff;
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            margin: 0 auto;
+            left: 0;
+           
+        }
+    }
+}
+
